@@ -7,33 +7,70 @@
     <title>Product and Services</title>
 
     <style>
-        .demo { 
+        body {
+        background-color: rgb(173, 193, 230);
+        }
+        .top_menu {
             border: 1px solid black;
             background-color: rgb(255, 242, 127);
             min-width: 100px;
             max-width: 500px;
-            display: inline;
+            display: flex;
+            margin: auto;
             border-radius: 5px;
+            justify-content: space-evenly;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            font-size: 24px;
+            flex-wrap: wrap;
+        }
+
+        .images {
+            display: inline;
+            justify-content: center;
+            align-items: center;
+        }
+        .Descr {
+            font-weight: bold;
+            max-width: 100px;
+            /* display: flex; */
+            margin: 10px;
+            text-align: center;
+            /* flex-wrap: wrap; */
+        }
+        .wrapper {
+            /* margin: auto; */
+            align-items: center;
+            /* display: flex; */
+            justify-content: space-evenly;
+        }
+        .about {
+            margin: auto;
+            text-align: center;
         }
     </style>
 </head>
 
-
-<body style="background-color:rgb(green);">
     <h1 align="center">Products and Services</h1>
-    <div class="demo">
-        <p align="center"><a href="about_us.html">About Us</a> &nbsp &nbsp &nbsp &nbsp
-            <a href="home_page.html">Home Page</a>
-        </p>
+    <div class="top_menu">
+        <a href="./about_us.html">About Us</a>
+        <a href="./home_page.html">Home Page</a>
     </div>
     <br>
     <hr>
-    <p align="left"><b>Here we have a list of our products and services:<br></p></b>
-    <img src=./img/Business.jpg width="400" height="175"><img src=./img/marketing.png width="400" height="200"> <br>
-    <img src=./img/logistics.jpg width="400" height="200"><img src=./img/decision.png width="400" height="200">
-    <br> <br>We specialize in assisting new tech firms bringing
-    their products to market. <br>To that end we support marketing, logistics, sourcing, management consulting,
-    and decision support.
-    </p>
-
+    <div class="about">We specialize in assisting new tech firms bringing
+        their products to market. <br>To that end we support marketing, logistics, sourcing, management consulting,
+        and decision support.</div>
+    <p><b>Our products and services:<br></p></b>
+    <!-- <div class="wrapper"> -->
+        <div class="Descr">Data Analytics</div>
+        <div class="images"><img src=./img/Business.jfif width="400" height="175"></div>
+        <div class="Descr">Marketing</div>
+        <div class="images"><img src=./img/marketing.png width="400" height="200"></div>
+        <div class="Descr">Logistics</div>
+        <div class="images"><img src=./img/logistics.jfif width="400" height="200"></div>
+        <div class="Descr">Decision Support Systems</div>
+        <div class="images"><img src=./img/decision.png width="400" height="200"></div>
+    </div>
 </html>
